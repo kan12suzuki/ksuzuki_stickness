@@ -8,8 +8,8 @@
 #include <ctime>
 #include <ode/ode.h>
 #include <drawstuff/drawstuff.h>
-#ifdef dDOUBLE                      // 単精度と倍精度の両方に対応する
-#define dsDrawSphere dsDrawSphereD  // ためのおまじない
+#ifdef dDOUBLE                      
+#define dsDrawSphere dsDrawSphereD 
 #endif
 #include "texturepath.h"
 #define dsDrawBox dsDrawBoxD
