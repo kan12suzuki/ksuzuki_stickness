@@ -337,7 +337,7 @@ void getaction(dBodyID body2){
     double posx, posy;
     // std::vector<int> action_list = readCSV("actionlist_046z.csv");
     // std::vector<int> action_list = readCSV("actionlist_046h.csv");
-    std::vector<int> action_list = readCSV("actionlist_047f.csv");
+    std::vector<int> action_list = readCSV("actionlist_f.csv");
       int action = action_list[t];
       printf("%i time steps, action = %i\n",t, action);
 

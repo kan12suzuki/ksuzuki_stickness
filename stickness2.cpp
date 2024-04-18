@@ -459,7 +459,7 @@ void command(int cmd)
     // // case 'j':dBodyAddForce(box[1].body, -10,0,0);break;
     // // case 'i':dBodyAddForce(box[1].body, 0,10,0) ;break;
     // // case 'k':dBodyAddForce(box[1].body, 0,-10,0);break;
-    case 'l':dBodyAddForceAtPos(box[1].body,30,0,0,X2[0],X2[1],0.25)  ;break;
+    case 'l':dBodyAddForceAtPos(box[1].body,10,0,0,X2[0],X2[1],0.25)  ;break;
     case 'j':dBodyAddForceAtPos(box[1].body, -10,0,0,X2[0],X2[1] -0.25,0.25);break;
     // case ';':dBodyAddForceAtPos(box[1].body,10,0,0,X2[0],X2[1] -0.25,0.25)  ;break;
     // case 'h':dBodyAddForceAtPos(box[1].body, -10,-10,0,X2[0],X2[1] +0.25,0.25);break;

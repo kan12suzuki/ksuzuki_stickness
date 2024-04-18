@@ -601,7 +601,7 @@ int main() {
     const int num_actions = 16;  // アクション数    
 
   
-    fp2 = fopen("Qtablexyt050.csv","w");
+    fp2 = fopen("Qtablexyt.csv","w");
 
 
     //ODEの設定
@@ -640,7 +640,7 @@ int main() {
         episode +=1; 
         // success_flag = 0;
         contactgroup = dJointGroupCreate(0);
-        fp = fopen("xyt_episode_vs_step050.csv","a");
+        fp = fopen("xyt_episode_vs_step.csv","a");
         // 状態の取得
         std::vector<double> observation = env.reset();
 
@@ -708,7 +708,7 @@ int main() {
             
 
             if (env.terminate() || t == max_number_of_steps - 1) {
-                fp3 = fopen("xyt_sumreward050.csv","a");
+                fp3 = fopen("xyt_sumreward.csv","a");
                 std::cout << episode << " finished after " << t + 1 << " time steps / mean " << calculateMean(last_time_steps) << std::endl;
                 std::cout << "Episode:" << episode << "  sum of reward =" << sumReward << "flags =" << calculateMean(flags)<<std::endl;
                  fprintf(fp3, "%i,%f\n",episode,sumReward);
@@ -740,17 +740,17 @@ int main() {
             state = nextstate;
             action = nextAction;
             if (episode == 1){
-                FILE *fp4 = fopen("actionlist_050z.csv","a");
+                FILE *fp4 = fopen("actionlist_z.csv","a");
                 fprintf(fp4, "%i\n",action);
                 fclose(fp4);
             }
             if (episode == 100){
-                FILE *fp5 = fopen("actionlist_050h.csv","a");
+                FILE *fp5 = fopen("actionlist_h.csv","a");
                 fprintf(fp5, "%i\n",action);
                 fclose(fp5);
             }
             if (final_flag == 1){
-                FILE *fp6 = fopen("actionlist_050f.csv","a");
+                FILE *fp6 = fopen("actionlist_f.csv","a");
                 fprintf(fp6, "%i\n",action);
                 fclose(fp6);
                 printf ("%i\n",action);

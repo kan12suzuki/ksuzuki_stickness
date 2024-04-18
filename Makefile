@@ -10,7 +10,7 @@ LIBDIR = -L/usr/lib/x86_64-linux-gnu -L$(TOP_SRCDIR)/drawstuff/src/.libs  -L$(TO
 INCDIR = -I$(TOP_SRCDIR)/include -I$(TOP_SRCDIR)/ode/src -I/usr/include
 
 
-OBJS =xythetaLearning xythetaMove action_read stickness2
+OBJS =xythetaLearning action_read stickness2
 
 all: $(OBJS)
 
